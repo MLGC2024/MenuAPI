@@ -11,6 +11,17 @@ var App = new Vue({
 	    visible: false,
 		menu: [],
 	},
+    updated: () => {
+        var el = document.getElementsByClassName('active');
+        var container = document.getElementsByClassName('container')[0];
+        if(el.length > 0)
+        {
+            container.scrollBy({
+                top: el[0].getBoundingClientRect().top - 100,
+                behavior: 'smooth'
+              })
+        }
+    }
 })
 
 function setActiveMenuIndex(index, active_){
