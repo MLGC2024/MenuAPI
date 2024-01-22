@@ -10,7 +10,7 @@ client_scripts {
 
 files {
     "html/css/*.css",
-    "html/css/img/*.png",
+    --"html/css/img/*.png",
     "html/*.html",
     "html/scripts/*.js",
 }
